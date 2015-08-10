@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Console_geometry
 {
     class Program
@@ -24,6 +25,7 @@ namespace Console_geometry
             Console.WriteLine("int: {0}", sizeofint.ToString());
             Console.WriteLine("int16: {0}", sizeofint16.ToString());
             Console.WriteLine("int32: {0}", sizeofint32.ToString());
+
         }
     }
 }

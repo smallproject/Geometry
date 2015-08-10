@@ -1,13 +1,20 @@
-﻿using System;
+﻿using System; 
+using System.Runtime; //for basic math extensions
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Console_geometry
 {
-    class Area
+    public class Area
     {
+        public Area()
+        {
+            
+        }
+
         public decimal square(decimal side)
         {
             return side*side;
@@ -19,8 +26,13 @@ namespace Console_geometry
         }
     }
 
-    class perimeter
+    public class perimeter
     {
+        public perimeter()
+        {
+            
+        }
+
         public decimal square(decimal side)
         {
             return side*4;
@@ -44,6 +56,32 @@ namespace Console_geometry
         public double circle(double radius)
         {
             return 2*Math.PI*radius;
+        }
+    }
+
+    
+    public class Volume
+    {
+        public Volume()
+        {
+            
+        }
+
+        public decimal cube(decimal a)
+        {
+            double b = Math.Pow(Convert.ToDouble(a), 3); 
+            
+            return Convert.ToDecimal(b);
+        }
+
+        public decimal rectangularprism(decimal a, decimal b, decimal c)
+        {
+            return a*b*c;
+        }
+
+        public decimal cylinder(decimal b, decimal h)
+        {
+            return b*h;
         }
     }
 }
